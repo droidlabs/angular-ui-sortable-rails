@@ -3,7 +3,7 @@
 
  @param [ui-sortable] {object} Options to pass to $.fn.sortable() merged onto ui.config
 */
-angular.module('ui.sortable', [])
+angular.module('ui.sortable.rails', [])
   .value('uiSortableConfig',{})
   .directive('uiSortable', [ 'uiSortableConfig', '$timeout',
         function(uiSortableConfig, $timeout) {
