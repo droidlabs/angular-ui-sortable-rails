@@ -4,21 +4,20 @@ TODO: Write a gem description
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add gem to your Gemfile & run `bundle install` in the terminal:
 
     gem 'angular-ui-sortable-rails'
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install angular-ui-sortable-rails
-
 ## Usage
 
-TODO: Write usage instructions here
+```
+app = angular.module 'app', ['ui.sortable.rails']
+```
+
+```
+div (ng-model='data.blocks' ui-sortable="{update: updateSrting, containment: 'parent', axis: 'y', cursor: 'move'}")
+  div.common-box (ng-repeat="block in data.blocks" dynamic-directive)
+```
 
 ## Contributing
 
